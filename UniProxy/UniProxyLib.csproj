@@ -7,8 +7,8 @@
     <ProjectGuid>{5A4440BD-72A5-4A97-BD41-3A02631912FB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>UniProxy</RootNamespace>
-    <AssemblyName>UniProxy</AssemblyName>
+    <RootNamespace>UniProxyLib</RootNamespace>
+    <AssemblyName>UniProxyLib</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

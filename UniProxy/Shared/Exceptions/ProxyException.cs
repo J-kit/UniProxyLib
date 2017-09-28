@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Runtime.Serialization;
 
-namespace UniProxy.Shared.Exceptions
+namespace UniProxyLib.Shared.Exceptions
 {
     /// <summary>
     /// This exception is thrown when a general, unexpected proxy error.

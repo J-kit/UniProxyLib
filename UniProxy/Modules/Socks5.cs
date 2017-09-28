@@ -1,15 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Net.Sockets;
-using System.Text;
 using System.Threading.Tasks;
-using UniProxy.Shared;
-using UniProxy.Utilities;
+using UniProxyLib.Shared;
+using UniProxyLib.Utilities;
 
-namespace UniProxy.Modules
+namespace UniProxyLib.Modules
 {
     internal class Socks5
     {

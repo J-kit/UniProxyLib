@@ -1,7 +1,7 @@
 ﻿using System.Net;
-using UniProxy.Utilities;
+using UniProxyLib.Utilities;
 
-namespace UniProxy.Shared
+namespace UniProxyLib.Shared
 {
     public class HostPortCollection
     {
