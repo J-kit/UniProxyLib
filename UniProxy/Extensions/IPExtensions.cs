@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Net;
 
-namespace UniProxyLib.Utilities
+namespace UniProxyLib.Extensions
 {
     internal static class IpExtensions
     {

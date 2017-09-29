@@ -1,4 +1,5 @@
 ﻿using System.Net;
+using UniProxyLib.Extensions;
 using UniProxyLib.Utilities;
 
 namespace UniProxyLib.Shared

@@ -3,6 +3,7 @@ using System.Globalization;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
+using UniProxyLib.Extensions;
 using UniProxyLib.Shared;
 using UniProxyLib.Shared.Exceptions;
 

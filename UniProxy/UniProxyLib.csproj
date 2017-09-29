@@ -49,9 +49,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Shared\ProxyStatus.cs" />
     <Compile Include="Shared\HostPortCollection.cs" />
-    <Compile Include="Utilities\IPExtensions.cs" />
+    <Compile Include="Extensions\IPExtensions.cs" />
     <Compile Include="Utilities\ProxyCommandBuildUtils.cs" />
-    <Compile Include="Utilities\StringExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Utilities\SwallowExceptionUtils.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-namespace UniProxyLib.Utilities
+namespace UniProxyLib.Extensions
 {
     public static class StringExtensions
     {
