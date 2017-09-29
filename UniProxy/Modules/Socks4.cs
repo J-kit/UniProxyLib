@@ -11,17 +11,13 @@ namespace UniProxyLib.Modules
     /// Disclamer:
     ///     This is untested and relies on public documentations of the socks4 protocol
     /// </summary>
-    internal class Socks4
+    internal class Socks4 : BaseProxyModule
     {
-        private HostPortCollection _proxyInformation;
-        public ProxyStatus Status { get; private set; }
-
-        public Socks4(HostPortCollection proxyInformation)
+        public Socks4(HostPortCollection proxyInformation) : base(proxyInformation)
         {
-            _proxyInformation = proxyInformation;
         }
 
-        public async Task<Stream> OpenStreamAsync(HostPortCollection dstSrv)
+        public override async Task<Stream> OpenStreamAsync(HostPortCollection dstSrv)
         {
             var socket = new TcpClient();
             if (await SwallowExceptionUtils.TryExec(

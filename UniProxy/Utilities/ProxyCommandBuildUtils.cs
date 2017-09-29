@@ -10,6 +10,14 @@ namespace UniProxyLib.Utilities
 {
     internal class ProxyCommandBuildUtils
     {
+        private const string HTTP_PROXY_CONNECT_CMD = "CONNECT {0}:{1} HTTP/1.0\r\nHost: {0}:{1}\r\n\r\n";
+
+        public static byte[] GenerateHttpConnectCommand(string host, int port)
+        {
+            string connectCmd = String.Format(CultureInfo.InvariantCulture, HTTP_PROXY_CONNECT_CMD, host, port.ToString(CultureInfo.InvariantCulture));
+            return connectCmd.GetBytes();
+        }
+
         public static byte[] BuildSocks4Command(byte command, HostPortCollection dstHost)
         {
             dstHost.UseHost = false; // 4A Doesnt work

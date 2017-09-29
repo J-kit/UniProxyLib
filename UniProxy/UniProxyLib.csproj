@@ -41,7 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Modules\HTTPConnect.cs" />
     <Compile Include="Modules\Socks4.cs" />
+    <Compile Include="Shared\BaseProxyModule.cs" />
     <Compile Include="Shared\Exceptions\ProxyException.cs" />
     <Compile Include="Modules\Socks5.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

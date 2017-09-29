@@ -8,19 +8,15 @@ using UniProxyLib.Utilities;
 
 namespace UniProxyLib.Modules
 {
-    internal class Socks5
+    internal class Socks5 : BaseProxyModule
     {
         private static readonly byte[] Socks5Payload = new byte[] { 5, 1, 0x00 };
 
-        public ProxyStatus Status { get; private set; }
-        private readonly HostPortCollection _proxyInformation;
-
-        public Socks5(HostPortCollection proxyInformation)
+        public Socks5(HostPortCollection proxyInformation) : base(proxyInformation)
         {
-            _proxyInformation = proxyInformation;
         }
 
-        public async Task<Stream> OpenStreamAsync(HostPortCollection dstSrv)
+        public override async Task<Stream> OpenStreamAsync(HostPortCollection dstSrv)
         {
             var socket = new TcpClient();
 
